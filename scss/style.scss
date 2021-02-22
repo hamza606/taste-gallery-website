@@ -415,7 +415,7 @@ footer{
 .main-swiper-controls{
   position: absolute;
   top: 50%;
-  transform: translateY(-40px);
+  transform: translateY(-22px);
   width: 100%;
   left: 0;
   z-index: 10;
@@ -523,4 +523,11 @@ footer{
     font-size: 15px;
     font-weight: 600;
   }
+}
+.swiper-container-multirow-column>.swiper-wrapper{
+  flex-direction:row;
+.swiper-slide{
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
 }

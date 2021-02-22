@@ -2,7 +2,7 @@ if($("#main-slider").length){
     var swiper = new Swiper('#main-slider', {
         slidesPerView: 1,
         slidesPerColumn: 2,
-        spaceBetween: 30,
+        spaceBetween: 0,
         // pagination: {
         //     el: '.swiper-pagination',
         //     clickable: true,
