@@ -304,6 +304,7 @@ footer{
   height: 540px;
   margin-left: auto;
   margin-right: auto;
+
   //padding-left: 30px;
   //padding-right: 30px;
   .swiper-slide {
@@ -379,6 +380,11 @@ footer{
           a{
             color: $light-black-color;
             text-decoration: none;
+            display: block;
+            @extend %one-line;
+            &.description{
+              font-size: 14px;
+            }
             &:hover{
               text-decoration: none;
               color: rgba(56, 177, 233, 1);
@@ -410,7 +416,21 @@ footer{
       }
     }
   }
+  &.recipes-section{
+    height: auto !important;
+    .swiper-slide{
+      margin-bottom: 30px;
+      display: block;
+      .recipe-box .recipe-card img{
+        height: 220px;
+        @include media-breakpoint-down(md){
+          height: 150px;
+        }
+      }
+    }
+  }
 }
+
 
 .main-swiper-controls{
   position: absolute;
