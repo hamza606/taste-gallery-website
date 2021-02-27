@@ -209,12 +209,24 @@ header {
   top: 100%;
   width: 7vw;
   height: auto;
+  @include media-breakpoint-down(md){
+    width: 15vw;
+  }
+  &.d-none{
+    display: block !important;
+  }
 }
 .left-scenery{
   position: absolute;
   left: 0;
   top: 100%;
   width: 7vw;
+  @include media-breakpoint-down(md){
+    width: 15vw;
+  }
+  &.d-none{
+    display: block !important;
+  }
 }
 .row-no-space{
   margin: 0 !important;
